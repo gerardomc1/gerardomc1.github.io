@@ -3,12 +3,7 @@
   <head>
   	<title>Snake Game</title>
   </head>
-	<iframe height="1000px" width="100%"
-		scrolling="no"
-		src="https://keepthescore.co/board/muolsetplfr/"
-		style="border:none;">
-	</iframe>
-	
+
   <body>
 
     <div id="score">0</div>
@@ -20,6 +15,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+      #score {
+        text-align: center;
+        font-size: 70px;
       }
     </style>
   </body>
@@ -94,6 +93,9 @@
 	    	]
 
 	    	score = 0;
+
+	    	dx = 10;
+    		dy = 0;
 
 	    	document.getElementById('score').innerHTML = score
 
